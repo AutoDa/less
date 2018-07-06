@@ -1,15 +1,10 @@
-<!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1 user-scalable=0">
     <title>Document</title>
-    <script>
-
-    </script>
     <!--调用外部less文件-->
-    <link rel="stylesheet/less" type="text/less" href="index.less" />
+    <link rel="stylesheet/less" type="text/less" href="less/index.less" />
     <!--调用外部js文件来进行转译less变为css-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/less.js/2.2.0/less.min.js"></script>
     <script type="text/javascript" src="http://www.w3school.com.cn/jquery/jquery.js"></script>
@@ -210,15 +205,14 @@
 <div class="divstyle2">New Messages</div>
 </body>
 <script>
+
     $(document).ready(
         function () {
-            var top= $(".container").eq(1).offset().top-7;
-            var left=$(".container").eq(1).offset().left+$(".container").eq(1).width()/2;
-            $(".divstyle1").offset({ top: top, left: left});
-            var top1= $(".container").eq(2).offset().top-7;
-            var left1=$(".container").eq(2).offset().left+$(".container").eq(2).width()/2;
-            $(".divstyle2").offset({ top: top1, left: left1});
+            $(".divstyle1").offset({ top: 365, left: 1142});
+
+           $(".divstyle2").offset({ top: 710, left: 1142});
         }
     )
+
 </script>
 </html>
